@@ -64,7 +64,7 @@ NAN_METHOD(node_swe_calc_ut) {
 
 	if (rflag < 0) {
 		result->Set (Nan::New<String> ("error").ToLocalChecked(), Nan::New<String> (serr).ToLocalChecked());
-	} else 
+	} else
 		if ((int)info [2]->NumberValue () & SEFLG_EQUATORIAL) {
 			result->Set (Nan::New<String> ("rectAscension").ToLocalChecked(), Nan::New<Number> (x [0]));
 			result->Set (Nan::New<String> ("declination").ToLocalChecked(), Nan::New<Number> (x [1]));
@@ -140,7 +140,7 @@ NAN_METHOD(node_swe_calc) {
 
 	if (rflag < 0) {
 		result->Set (Nan::New<String> ("error").ToLocalChecked(), Nan::New<String> (serr).ToLocalChecked());
-	} else 
+	} else
 		if ((int)info [2]->NumberValue () & SEFLG_EQUATORIAL) {
 			result->Set (Nan::New<String> ("rectAscension").ToLocalChecked(), Nan::New<Number> (x [0]));
 			result->Set (Nan::New<String> ("declination").ToLocalChecked(), Nan::New<Number> (x [1]));
@@ -220,7 +220,7 @@ NAN_METHOD(node_swe_fixstar) {
 
 	if (rflag < 0) {
 		result->Set (Nan::New<String> ("error").ToLocalChecked(), Nan::New<String> (serr).ToLocalChecked());
-	} else 
+	} else
 		if ((int)info [2]->NumberValue () & SEFLG_EQUATORIAL) {
 			result->Set (Nan::New<String> ("name").ToLocalChecked(), Nan::New<String> (star).ToLocalChecked());
 			result->Set (Nan::New<String> ("rectAscension").ToLocalChecked(), Nan::New<Number> (x [0]));
@@ -303,7 +303,7 @@ NAN_METHOD(node_swe_fixstar_ut) {
 
 	if (rflag < 0) {
 		result->Set (Nan::New<String> ("error").ToLocalChecked(), Nan::New<String> (serr).ToLocalChecked());
-	} else 
+	} else
 		if ((int)info [2]->NumberValue () & SEFLG_EQUATORIAL) {
 			result->Set (Nan::New<String> ("name").ToLocalChecked(), Nan::New<String> (star).ToLocalChecked());
 			result->Set (Nan::New<String> ("rectAscension").ToLocalChecked(), Nan::New<Number> (x [0]));
@@ -622,7 +622,7 @@ NAN_METHOD(node_swe_get_ayanamsa_name) {
 		Nan::ThrowTypeError ("Wrong type of arguments");
 	};
 
-	char * val;
+	const char * val;
 
 	val = ::swe_get_ayanamsa_name (
 		(int)info [0]->NumberValue ()
