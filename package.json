@@ -1,11 +1,11 @@
 {
-  "author": "mivion",
-  "name": "swisseph",
-  "description": "Swiss Ephemeris binding for node.js",
-  "version": "0.5.7",
-  "homepage": "http://github.com/mivion/swisseph",
+  "author": "keel",
+  "name": "swisseph-new",
+  "description": "Swiss Ephemeris binding for node.js(from mivion)",
+  "version": "0.5.8",
+  "homepage": "http://github.com/keel/swisseph",
   "repository": {
-    "url": "http://github.com/mivion/swisseph.git"
+    "url": "http://github.com/keel/swisseph.git"
   },
   "main": "./lib/swisseph.js",
   "keywords": [
